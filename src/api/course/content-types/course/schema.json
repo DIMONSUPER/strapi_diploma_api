@@ -10,44 +10,42 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": false
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "type": "string"
     },
     "description": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "type": "text"
     },
     "rating": {
-      "default": 0,
       "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "default": 0
+    },
+    "category": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "lessons": {
+      "type": "json"
+    },
+    "users": {
+      "type": "json"
     },
     "teacher_id": {
       "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "default": 0
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "ua",
+        "ru",
+        "us"
+      ],
+      "default": "us"
     }
   }
 }
